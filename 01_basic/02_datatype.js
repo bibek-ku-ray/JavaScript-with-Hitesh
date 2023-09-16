@@ -13,7 +13,9 @@ undefined -> value not assigned
 symbol -> used to find uniqueness 
 
 [OBJECT]
-
 */
+
+console.log(typeof null);
+console.log(typeof undefined);
 
 console.log(typeof "3");
