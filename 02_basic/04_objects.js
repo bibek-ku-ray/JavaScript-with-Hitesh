@@ -39,6 +39,36 @@ const obj5 = {...obj1, ...obj2}
 // console.log(Object.keys(tinderUser)); //return key in array form
 // console.log(Object.entries(tinderUser)); // return key and value pair in form of array
 
-console.log(tinderUser.hasOwnProperty("name"));
+// console.log(tinderUser.hasOwnProperty("name"));
 
 
+
+
+//++++++++++++++++++++++++++++  Object destructuring and JSON API +++++++++++++++++++++++++++++++
+
+//Oabject destructure
+
+const course = {
+    courseName: "JS",
+    price: 0,
+    instructor: "hitesh"
+}
+
+console.log(course.courseName);
+
+//destructuring
+const {courseName} = course
+const {instructor: teacher} = course
+
+console.log(courseName);
+console.log(teacher);
+
+//API
+//JSON
+
+
+// {
+//     "name": "bibek"
+//     "courseName": "js in hindi"
+//     "fee": "free"
+// }
