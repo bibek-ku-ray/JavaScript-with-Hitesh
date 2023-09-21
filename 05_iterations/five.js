@@ -24,7 +24,7 @@ const coding = ["Cpp", "java", "c", "javascript", "ruby"]
 
 // coding.forEach((item, index, arr) => {
 //     console.log(item, index, arr);
-// })
+// }) 
 
 const language = [
     {
