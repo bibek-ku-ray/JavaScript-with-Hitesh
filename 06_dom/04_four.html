@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: #212121; color: #fff;">
+
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+
+<script>
+
+    //adding the element
+
+    function addLanguage(langName) {
+        const li = document.createElement('li')
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+
+    }
+
+    addLanguage("Java")
+    addLanguage("Python")
+    addLanguage("Ruby")
+
+    //more optimized way to add child
+    /**
+     * This is more optimized because whole tree should not be traverse (appendChild)
+     * but while using li.innerHTML whole tree is traversed that take more time
+     */
+
+    function addOptiLang(langName) {
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLang('golang')
+    addOptiLang("C++")
+
+
+    //editing the element
+    const secLanguage = document.querySelector('li:nth-child(2)')
+    const newli = document.createElement('li')
+    // secLanguage.innerHTML = 'Mojo'
+    newli.textContent = 'Mojo'
+    secLanguage.replaceWith(newli)
+
+    const fristLang = document.querySelector('li:first-child')
+    fristLang.outerHTML = '<li>JS</li>'
+
+    //remove
+    const lastLang = document.querySelector('li:first-child')
+    lastLang.remove()
+
+</script>
+
+</html>
