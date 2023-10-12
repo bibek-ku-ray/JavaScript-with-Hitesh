@@ -3,7 +3,7 @@ var name = "bibek";
 let address = "Kathamdu";
 houseNo=1001;  //->variable can be declear like this but dont use this
 let friend;
-//id = 122; -> not allowed becaouse it const i.e value cant be changed
+//id = 122; -> not allowed becaouse id is const i.e value cant be changed
 /*
 var
 prefer not to use var

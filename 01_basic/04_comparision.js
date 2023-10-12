@@ -1,9 +1,12 @@
 console.log("02" > 1);
+console.log("'02' > '1b' :: ","02" > "1");
+console.log("'02' > '1b' :: ","02" > "1");
 
 
 console.log(null > 0); // false -> 0 > 0
 console.log(null == 0); // false
 console.log(null >= 0); // true -> 0 >= 0
+
 /**
  * NOTE:
  * The reason is that an equality check == and comparions >< >= <= work differently.

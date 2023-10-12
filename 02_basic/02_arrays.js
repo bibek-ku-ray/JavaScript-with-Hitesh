@@ -20,7 +20,7 @@ console.log(allArr)
 const array2 = [1, 2, [5, 4], 5, [7, 8, [9, 1]]]
 const newArray2 = array2.flat(Infinity)
 
-console.log(newArray2)
+console.log("new array2::",newArray2)
 
 /**
  * flat -> return a new array by converting original array into new subarray.
