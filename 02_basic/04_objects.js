@@ -21,8 +21,8 @@ tinderUser.isLoggedIn = false;
 
 //  console.log(name11.fullname11.userfullname11.firstname11);
 //  console.log(name11.fullname11.userfullname11.lastname11);
- console.log(name1.fullname1.myname1?.userfullname1.lastname1);
- console.log(name1.fullname1.userfullname1.lastname1);
+//  console.log(name1.fullname1.myname1?.userfullname1.lastname1);
+//  console.log(name1.fullname1.userfullname1.lastname1);
 
 //  console.log(name1.fullname1);
 
@@ -34,13 +34,13 @@ const obj4 = Object.assign( obj1, obj2) //obj1 is been assign or added to obj1
 
 const obj5 = {...obj1, ...obj2}
 // console.log(obj5);
-console.log("obj 3::",obj3);
-console.log("obj 1:::",obj1);
+// console.log("obj 3::",obj3);
+// console.log("obj 1:::",obj1);
 // console.log(obj4);
 
-console.log(Object.values(tinderUser)); //return value in array form from obj: tinderuser
-console.log(Object.keys(tinderUser)); //return key in array form
-console.log(Object.entries(tinderUser)); // return key and value pair in form of array
+// console.log(Object.values(tinderUser)); //return value in array form from obj: tinderuser
+// console.log(Object.keys(tinderUser)); //return key in array form
+// console.log(Object.entries(tinderUser)); // return key and value pair in form of array
 
 // console.log(tinderUser.hasOwnProperty("name1"));
 
@@ -57,14 +57,17 @@ const course = {
     instructor: "hitesh"
 }
 
-console.log(course.coursename1);
+// console.log(course.coursename1);
 
 //destructuring
 const {coursename1} = course
 const {instructor: teacher} = course
+const {price: rs} = course;
 
 console.log(coursename1);
 console.log(teacher);
+// console.log(price);
+console.log(rs);
 
 //API
 //JSON
@@ -75,3 +78,4 @@ console.log(teacher);
 //     "coursename1": "js in hindi"
 //     "fee": "free"
 // }
+
