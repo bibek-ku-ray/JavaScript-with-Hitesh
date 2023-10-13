@@ -66,7 +66,7 @@ function handleObject(anyObj) {
 
 handleObject(user);
 
-handleObject({
+handleObject({ //passing object in the function
     name: "Ray",
     price: 500
 

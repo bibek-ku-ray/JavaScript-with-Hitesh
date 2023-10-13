@@ -2,7 +2,7 @@
 
 /**
  * this is uesd for immediate execution of the function
- * used to avoid the pollution of global scope declartion
+ * used to avoid or decrease the pollution of global scope declartion
  */
 
 //named iife
@@ -10,7 +10,7 @@
     console.log(`connected to chai db, ${name}`);
 })('Kumar'); //semicolon should be used to terminate this function
 
-//unnamed iife
+//unnamed iife OR ARROW FUNCTION WITH IN IIFE
 (() => {
     console.log(`connected to chai db again.`);
 })();

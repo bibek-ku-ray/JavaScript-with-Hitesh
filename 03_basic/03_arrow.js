@@ -3,8 +3,8 @@ const user = {
     price: 333,
 
     welcomeMessage: function () {
-        console.log(`${this.username}, welcome to website`)
-        console.log(this)
+        // console.log(`${this.username}, welcome to website`)
+        // console.log(this)
     }
 }
 
@@ -33,7 +33,7 @@ const user = {
 
 const chai = () => {
     let username = "Bibke"
-    console.log(this)
+    // console.log(this)
 }
 
 // chai()
@@ -55,4 +55,43 @@ const chai = () => {
 const addTwo = (num1, num2) => ({user: "bibek"})
 
 
-console.log(addTwo(15, 3))
+// console.log(addTwo(15, 3))
+
+
+
+
+//***************************** Revision ******************/
+
+const custInfo = {
+    name: "John Cena",
+    custId: 1225,
+
+    greet: function(){
+        console.log(`${this.name}, welcome to Website.`);
+        console.log("\nthis1", this);
+    }
+    
+
+}
+
+//  
+
+/*
+    NOTE 
+    this will reture empty object i.e {} because their is no global object
+    but in brower this will return "window" because window is the global object in window
+*/ 
+
+custInfo.greet()
+// custInfo.name = "Roman"
+// custInfo.greet()
+// console.log("\nthis3", this);
+
+
+const arrowFun = (a, b, c) => {
+    let username = "Deno"
+    console.log(this.username);
+    return a*b+c
+}
+
+console.log(arrowFun(5,2,8))
