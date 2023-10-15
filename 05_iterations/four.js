@@ -1,5 +1,5 @@
 /**
- * forin loop is used to iterate the objects
+ * for-in loop is used to iterate the objects
  */
 
 const myObject = {
@@ -34,7 +34,7 @@ const programming = ["Java", "C", "C++", "JavaScript"]
 //     console.log();
 // }
 
-// const map = new Map()  //cant be asscess with for forin loop because map is not iterable
+// const map = new Map()  //cant be asscess with for-in loop because map is not iterable
 // map.set('IN', "India")
 // map.set('NP', "Nepal")
 // map.set('FR', "France")

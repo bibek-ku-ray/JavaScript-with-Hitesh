@@ -20,7 +20,7 @@ const userMail = []
 
 // const emptyObj = {}
 
-// if(Object.keys(emptyObj).length === 0){
+// if(Object.keys(emptyObj).length === 0){  //Object.keys(emptyObj) will return array
 //     console.log("Object is empty");
 // }
 
@@ -30,7 +30,8 @@ let val1;
 // val1 = 5 ?? 10 // 10 will be assign
 // val1 = null ?? 20 // if the value is null then 20 will be assign
 
-// val1 = undefined ?? 15
+// val1 = undefined ?? 15 //it will return 15
+ 
 val1 = null ?? 10 ?? 15 // 10 will be assign because 10 is the first value that was found
 val1 = null ?? undefined // undefined will be assigned
 

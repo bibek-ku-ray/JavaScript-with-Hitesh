@@ -10,6 +10,16 @@ const coding = ["Cpp", "java", "c", "javascript", "ruby"]
 // })
 
 
+// coding.forEach(function (val)  {
+//     console.log(val);
+// })
+
+// coding.forEach( () => {
+//     console.log(coding[key]);
+//     }
+// )
+
+
 //arrow function
 // coding.forEach((item) => {
 //     console.log(item);
@@ -44,3 +54,18 @@ const language = [
 language.forEach((item)=>{
     console.log(item.languageName);
 })
+
+console.log();
+
+language.forEach((item) => {
+    console.log(item.languageFileName);
+})
+
+console.log();
+
+language.forEach((item) => {
+    console.log(item);
+})
+
+
+

@@ -3,17 +3,17 @@
 
 const isUserLoggedIn = true
 
-// if(2=="2"){
-//     console.log("Welcome");
-// }
+if(2==="2"){
+    console.log("Welcome");
+}
 
-// if(2!=="2"){
-//     console.log("Welcome again");
-// }
+if(2!=="2"){
+    console.log("Welcome again");
+}
 
 const balance = 1000
 
-// if (balance > 500) console.log("Test"), console.log("Test2");
+if (balance > 500) console.log("Test"), console.log("Test2");
 // dont write like this because it hamper readiablilty
 
 // write like this
