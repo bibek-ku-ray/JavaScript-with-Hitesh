@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM in JS</title>
+    <style>
+        body {
+            background: black;
+            color: wheat;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-black">
+        <h1 id="heading" class="dom">Dom learning</h1>
+        <p id="para1">Learing JavaScript <span style="display: none;">from Chai aur code</span></p>
+
+        <ul>
+            <li class="list">one</li>
+            <li class="list">two</li>
+            <li class="list">three</li>
+            <li class="list">four</li>
+        </ul>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+<!--  
+    .innerText Vs .textContent Vs .innerHTML
+    
+    * para1.innerText will give only "Learing JavaScript" 
+    * because we have hidden other text using span (return only visible content)
+    
+    * para1.textContent will give "Learing JavaScript from Chai aur code" 
+    * even if some portion of code is hidden. (return all content, hidden content too)
+
+    * para1.innerHTML will give everything including the html too, 
+    * it returns 'Learing JavaScript <span style="display: none;">from Chai aur code</span>'
+-->

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DOM Learning</title>
 </head>
 
 <body style="background-color: #212121; color: #fff">
@@ -15,15 +15,17 @@
         <div class="day">Thrusday</div>
     </div>
 </body>
+
+
 <script>
     const parent1 = document.querySelector('.firstparent')
-    // console.log(parent1);
-    // console.log(parent1.children);
-    // console.log(parent1.children[1].innerHTML);
+    console.log(parent1);
+    console.log(parent1.children);
+    console.log(parent1.children[1].innerHTML);
 
-    // for (let i = 0; i < parent1.children.length; i++) {
-    //     console.log(parent1.children[i].innerHTML);
-    // }
+    for (let i = 0; i < parent1.children.length; i++) {
+        console.log(parent1.children[i].innerHTML);
+    }
 
     parent1.children[2].style.color = "orange"
     // console.log(parent1.firstElementChild);
