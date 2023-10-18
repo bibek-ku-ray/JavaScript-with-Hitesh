@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project-3</title>
+
+    <style>
+        #clock {
+
+            background-color: blue;
+            border-radius: 8rem;
+            color: whitesmoke;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 80px;
+            font-size: 50rem;
+            box-shadow: 1.25rem 1.25rem 0.75rem black;
+        }
+
+        #banner {
+            font-size: 14rem;
+            font-weight: 600;
+            font-family: sans-serif;
+            text-transform: uppercase;
+        }
+
+        .center {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: ;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="center">
+        <div id="banner">LOCAL TIME</div>
+        <div id="clock"></div>
+    </div>
+</body>
+<script>
+
+    const clock = document.getElementById('clock')
+
+
+    setInterval(function () {
+        let date = new Date();
+        clock.innerHTML = date.toLocaleTimeString();
+    }, 1000)
+
+
+</script>
+
+</html>
