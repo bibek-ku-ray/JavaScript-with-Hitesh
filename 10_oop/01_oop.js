@@ -32,4 +32,4 @@ const userTwo = new user('cena', 4, false);
 console.log('userone: ', userOne);
 // console.log('usertwo: ', userTwo);
 
-// console.log(userOne.constructor);
+// console.log(userOne.constructor); n 
