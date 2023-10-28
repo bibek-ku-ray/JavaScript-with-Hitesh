@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clouser</title>
+    <style>
+        body {
+            background-color: #21272e;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+</body>
+<script>
+
+    //Lexical Scope -> means variable or methood of outer function is can be access by the inner function
+
+    // function init() {
+    //     let name = 'bibek kumar ray';
+    //     function displayName() {
+    //         console.log(name);
+    //     }
+    //     displayName();
+    // }
+    // init();
+
+    // function outer() {
+    //     let companyName = 'fantech';
+    //     let product = 'keyboard';
+    //     function inner() {
+    //         console.log('Inner: ', companyName);
+    //         function inner2() {
+    //             console.log('Inner inner: ', product);
+    //         }
+    //         inner2();
+    //     }
+    //     inner();
+    // }
+    // outer();
+    // console.log('outer: ', companyName);
+
+
+    //Closure
+
+    function makeFun() {
+        const name = 'microsoft';
+        function displayName() {
+            console.log(name);
+        }
+        return displayName;
+    }
+
+    const myFun = makeFun();
+    myFun()
+</script>
+
+<script>
+
+    // const greenbtn = document.querySelector('#green');
+    // const orangebtn = document.querySelector('#orange');
+
+    // greenbtn.addEventListener('click', () => {
+    //     document.body.style.backgroundColor = 'green';
+    // });
+    // orangebtn.addEventListener('click', () => {
+    //     document.body.style.backgroundColor = 'orange';
+    // })
+
+    function clickHandler(color) {
+        return function () {
+            document.body.style.backgroundColor = color;
+        };
+    }
+
+    document.getElementById('green').onclick = clickHandler('green');
+    document.getElementById('orange').onclick = clickHandler('orange')
+
+</script>
+
+</html>
